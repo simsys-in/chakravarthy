@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CollectionActivity">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/background_light"
+            android:paddingBottom="16dp"
+            android:paddingTop="16dp"
+            android:paddingRight="16dp"
+            android:paddingLeft="16dp"
+            >
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="வாடிக்கையாளர்"
+                android:textSize="12sp" />
+                <AutoCompleteTextView
+                    android:id="@+id/actvPARTYNAME"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:selectAllOnFocus="true"
+                    android:background="@color/yello"
+                    android:hint="வாடிக்கையாளரை தேர்ந்தெடு"
+                    android:textSize="14sp"
+                    android:text="" />
+                <TableLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50dp"
+                    android:background="@drawable/my_drawable"
+                    android:padding="5dp">
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/due"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/my_drawablecolor"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="தவணை"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/status"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/my_drawablecolor"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="தேதி"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/home"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/my_drawablecolor"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="தொகை"
+                            android:textStyle="bold" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/tvVOUCHERNUMBER"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/my_drawabledisable"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="" />
+
+                        <TextView
+                            android:id="@+id/tvDATE"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/my_drawabledisable"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="" />
+
+                        <EditText
+                            android:id="@+id/etAMOUNT"
+                            android:digits="0123456789."
+                            android:selectAllOnFocus="true"
+                            android:inputType="numberDecimal"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:gravity="right"
+                            android:padding="10dp"
+                            android:text="" />
+                    </TableRow>
+                </TableLayout>
+
+                <Button
+                android:id="@+id/btnSave"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:text="சேமி" />
+                <ProgressBar
+                    android:id="@+id/pBar"
+                    style="?android:attr/progressBarStyleLarge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                </ProgressBar>
+                <TextView
+                    android:id="@+id/result"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text=""
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+        </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
